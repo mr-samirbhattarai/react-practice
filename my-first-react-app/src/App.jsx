@@ -5,22 +5,6 @@ import MovieCard from './components/MovieCard';
 import { useDebounce } from 'react-use';
 import { getTrandingMovies, updateSearchCount } from './appwrite';
 
-// index.jsx or App.jsx
-import { HashRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-
-<HashRouter>
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/about" element={<About />} />
-  </Routes>
-</HashRouter>
-
-
-
-
-
 const API_BASE_URL = 'https://api.themoviedb.org/3';
 
 const API_KEY = import.meta.env.VITE_API_Read_Access_Token;
